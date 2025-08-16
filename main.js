@@ -95,11 +95,12 @@ let questions = [
     correct: "int x = 8;",
   },
 
- {
-  question: "What will be the output if user enters 7?\n\nint x;\nscanf(\"%d\", &x);\nif(x % 2 == 0){\n   printf(\"Even\");\n}else{\n   printf(\"Odd\");\n}",
-  options: ["Even", "Odd", "Error", "Nothing"],
-  correct: "Odd"
-},
+  {
+    question:
+      'What will be the output if user enters 7?\n\nint x;\nscanf("%d", &x);\nif(x % 2 == 0){\n   printf("Even");\n}else{\n   printf("Odd");\n}',
+    options: ["Even", "Odd", "Error", "Nothing"],
+    correct: "Odd",
+  },
   {
     question:
       'What is the output of this code?\n\nint x = 10;\nprintf("%d", x--);',
@@ -137,6 +138,18 @@ let questions = [
       "Both increment the variable",
     ],
     correct: "--x decrements before use, x-- decrements after use",
+  },
+  {
+    question:
+      'What is displayed if input is 101?\n\nint num;\nscanf("%d", &num);\nif(num < 100){\n   printf("Less than 100");\n}else{\n   printf("100 or more");\n}',
+    options: ["Less than 100", "100 or more", "Error", "Nothing"],
+    correct: "100 or more",
+  },
+  {
+    question:
+      'If user enters 20, what is printed?\n\nint num;\nscanf("%d", &num);\nif(num % 5 == 0){\n   printf("Divisible by 5");\n}else{\n   printf("Not Divisible");\n}',
+    options: ["Divisible by 5", "Not Divisible", "Error", "Nothing"],
+    correct: "Divisible by 5",
   },
 ];
 
