@@ -1,29 +1,37 @@
 // Su'aalaha C Programming basics
 let questions = [
   {
-    question: "Which symbol is used to end a statement in C?",
-    options: [";", ":", "."],
-    correct: ";",
+    question:
+      'What will the program print?\n\nint x = 10;\nif(x > 5){\n   printf("Greater");\n}else{\n   printf("Smaller");\n}',
+    options: ["Greater", "Smaller", "Error", "Nothing"],
+    correct: "Greater",
+  },
+
+  {
+    question:
+      'What will be printed?\n\nint age = 18;\nif(age > 18){\n   printf("Adult");\n}else if(age == 18){\n   printf("Just Adult");\n}else{\n   printf("Minor");\n}',
+    options: ["Adult", "Just Adult", "Minor", "Error"],
+    correct: "Just Adult",
+  },
+
+  {
+    question:
+      'What will happen?\n\nint age = 18;\nif(age > 18){\n   printf("Adult");\n}else if(age == 18){\n   printf("Just 18");\n}else{\n   printf("Minor");\n}',
+    options: ["Adult", "Just 18", "Minor", "Error"],
+    correct: "Just 18",
   },
   {
-    question: "Which function is used to print output in C?",
-    options: ["printf()", "cout<<", "print()"],
-    correct: "printf()",
+    question:
+      'What will be the output?\n\nint num = -3;\nif(num >= 0){\n   printf("Positive");\n}else{\n   printf("Negative");\n}',
+    options: ["Positive", "Negative", "Error", "Nothing"],
+    correct: "Negative",
   },
+
   {
-    question: "Which data type is used to store decimal numbers in C?",
-    options: ["int", "float", "char"],
-    correct: "float",
-  },
-  {
-    question: "Which keyword is used to declare a variable in C?",
-    options: ["var", "let", "int"],
-    correct: "int",
-  },
-  {
-    question: "Which function is used to read input from user in C?",
-    options: ["scanf()", "input()", "prompt"],
-    correct: "scanf()",
+    question:
+      'What will the program print?\n\nint num = 12;\nif(num % 2 == 0){\n   printf("Even");\n}else{\n   printf("Odd");\n}',
+    options: ["Even", "Odd", "Error", "Nothing"],
+    correct: "Even",
   },
 
   {
@@ -44,20 +52,23 @@ let questions = [
     correct: "1",
   },
   {
-    question: "Which operator is the logical AND operator in C?",
-    options: ["&", "&&", "|", "||"],
-    correct: "&&",
+    question:
+      'User gives 15, what is printed?\n\nint number;\nscanf("%d", &number);\nif(number < 10){\n   printf("Small");\n}else if(number < 20){\n   printf("Medium");\n}else{\n   printf("Large");\n}',
+    options: ["Small", "Medium", "Large", "Error"],
+    correct: "Medium",
   },
   {
-    question: "Which operator is the logical OR operator in C?",
-    options: ["|", "||", "&", "&&"],
-    correct: "||",
+    question:
+      'What will be the output?\n\nint temp = 25;\nif(temp > 30){\n   printf("Hot");\n}else{\n   printf("Cool");\n}',
+    options: ["Hot", "Cool", "Error", "Nothing"],
+    correct: "Cool",
   },
   {
-  question: "Which operator is used for logical NOT in C?",
-  options: ["!", "~", "&&", "||"],
-  correct: "!"
-},
+    question:
+      'What will be printed?\n\nint marks = 45;\nif(marks >= 50){\n   printf("Pass");\n}else{\n   printf("Fail");\n}',
+    options: ["Pass", "Fail", "Error", "Nothing"],
+    correct: "Fail",
+  },
 
   {
     question: "What will be the value of the expression !(0) in C?",
@@ -65,15 +76,16 @@ let questions = [
     correct: "1",
   },
   {
-    question: "Which of the following is NOT a valid variable type in C?",
-    options: ["int", "float", "boolean", "char"],
-    correct: "boolean",
+    question:
+      'Output?\n\nint score = 75;\nif(score >= 90){\n   printf("Grade A");\n}else if(score >= 60){\n   printf("Grade B");\n}else{\n   printf("Grade C");\n}',
+    options: ["Grade A", "Grade B", "Grade C", "Error"],
+    correct: "Grade B",
   },
   {
     question:
-      "What data type is used to store the value 8 in this statement: int x = 8;",
-    options: ["float", "int", "char", "double"],
-    correct: "int",
+      'If user inputs 100, what will program display?\n\nint score;\nscanf("%d", &score);\nif(score >= 90){\n   printf("Excellent");\n}else{\n   printf("Keep Trying");\n}',
+    options: ["Excellent", "Keep Trying", "Error", "Nothing"],
+    correct: "Excellent",
   },
 
   {
@@ -83,17 +95,17 @@ let questions = [
     correct: "int x = 8;",
   },
 
+ {
+  question: "What will be the output if user enters 7?\n\nint x;\nscanf(\"%d\", &x);\nif(x % 2 == 0){\n   printf(\"Even\");\n}else{\n   printf(\"Odd\");\n}",
+  options: ["Even", "Odd", "Error", "Nothing"],
+  correct: "Odd"
+},
   {
     question:
-      'What is the output of the following C code?\n\nint x = 8;\nprintf("%d", x);',
-    options: ["8", "0", "x", "Error"],
-    correct: "8",
+      'What is the output of this code?\n\nint x = 10;\nprintf("%d", x--);',
+    options: ["10", "9", "Error", "Undefined behavior"],
+    correct: "10",
   },
-  {
-  question: "What is the output of this code?\n\nint x = 10;\nprintf(\"%d\", x--);",
-  options: ["10", "9", "Error", "Undefined behavior"],
-  correct: "10"
-},
 
   {
     question: "What will happen if you write this in C: int x; x = 8;",
@@ -107,9 +119,9 @@ let questions = [
   },
   {
     question:
-      "Which format specifier is used in printf to display the value of integer variable x?",
-    options: ["%d", "%f", "%c", "%s"],
-    correct: "%d",
+      'What is the result if user types 0?\n\nint n;\nscanf("%d", &n);\nif(n){\n   printf("True");\n}else{\n   printf("False");\n}',
+    options: ["True", "False", "Error", "Nothing"],
+    correct: "False",
   },
   {
     question: 'What will this code print?\n\nint x = 8;\nprintf("%d", x + 2);',
@@ -117,16 +129,15 @@ let questions = [
     correct: "10",
   },
   {
-  question: "What is the difference between --x and x-- in C?",
-  options: [
-    "--x decrements before use, x-- decrements after use",
-    "No difference",
-    "x-- decrements before use, --x decrements after use",
-    "Both increment the variable"
-  ],
-  correct: "--x decrements before use, x-- decrements after use"
-},
-
+    question: "What is the difference between --x and x-- in C?",
+    options: [
+      "--x decrements before use, x-- decrements after use",
+      "No difference",
+      "x-- decrements before use, --x decrements after use",
+      "Both increment the variable",
+    ],
+    correct: "--x decrements before use, x-- decrements after use",
+  },
 ];
 
 // Variables for progress
@@ -234,7 +245,7 @@ function nextQuestion() {
 
 function updateProgress() {
   let progressPercent = (currentQuestionIndex / questions.length) * 100;
-//   progressPercent.Math.max(progressPercent, 100)
+  //   progressPercent.Math.max(progressPercent, 100)
   progressBar.style.width = progressPercent + "%";
 }
 
